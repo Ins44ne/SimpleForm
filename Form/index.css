@@ -1,0 +1,137 @@
+* {
+  border-radius: 15px;
+  font-family: 'Playwrite NZ', cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin: 1vh 0;
+}
+
+body {
+  background: -webkit-linear-gradient(90deg, #75a47f, #bacd92, #fcffe0);
+  background: linear-gradient(90deg, #75a47f, #bacd92, #fcffe0);
+}
+
+#header,
+#footer {
+  text-align: center;
+}
+
+#header {
+  border-bottom: 5px groove #8996a0;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 3px 15px 5px #8996a0;
+}
+
+#footer {
+  border-top: 5px groove #8996a0;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 5px #8996a0;
+}
+
+#titleFooter,
+#titleHeader {
+  font-weight: 900;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  max-width: 768px;
+  margin: 1vw auto;
+  padding: 1vw 3vw;
+  border: 5px groove #8996a0;
+  background-color: #bacd926c;
+}
+
+input,
+select {
+  max-width: 700px;
+  padding: 3px 3px 3px 10px;
+  background-color: #ffffff7a;
+  margin-left: 15px;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+#rateForm,
+#timeEnd {
+  cursor: pointer;
+}
+
+optgroup {
+  text-align: center;
+}
+
+#telExample {
+  font-size: 10px;
+}
+
+.personalInfo,
+.vehicles,
+.pets,
+.range,
+.time,
+.reset {
+  display: flex;
+  flex-direction: column;
+}
+
+#question,
+.personalInfo label,
+.range label,
+.time label {
+  font-weight: 900;
+}
+
+.carInfo,
+.motoInfo {
+  /*display: flex;*/
+  display: none;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.otherCar,
+.otherMoto {
+  /*display: flex;*/
+  display: none;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.otherCarSelector,
+.otherMotoSelector {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+}
+
+.range,
+.time,
+.reset {
+  flex-direction: row;
+}
+
+.reset {
+  border: none;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.reset input {
+  width: 9vw;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  transition: 0.7s background-color ease;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover {
+  background-color: #75a47f;
+  transition: 0.7s background-color ease;
+}

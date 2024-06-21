@@ -1,3 +1,7 @@
+const motoInfo = document.getElementById('motoInfo')
+const otherMoto = document.getElementById('otherMoto')
+const otherCar = document.getElementById('otherCar')
+const carInfo = document.getElementById('carInfo')
 const rateForm = document.getElementById('rateForm')
 const haveCarYes = document.getElementById('carYes')
 const haveCarNo = document.getElementById('carNo')
@@ -11,32 +15,31 @@ function renderScaleNumber() {
 
 function showAddInfo(value, bool) {
   if (value === 'car' && bool === true) {
-    const carInfo = document.getElementById('carInfo')
     carInfo.style.display = 'flex'
   }
   if (value === 'carOther' && bool === true) {
-    const otherCar = document.getElementById('otherCar')
     otherCar.style.display = 'flex'
   }
   if (value === 'car' && bool === false) {
-    const carInfo = document.getElementById('carInfo')
     carInfo.style.display = 'none'
+    otherCar.style.display = 'none'
+    otherBrandCar.checked = false
   }
 
   if (value === 'moto' && bool === true) {
-    const motoInfo = document.getElementById('motoInfo')
     motoInfo.style.display = 'flex'
   }
   if (value === 'motoOther' && bool === true) {
-    const otherMoto = document.getElementById('otherMoto')
     otherMoto.style.display = 'flex'
   }
   if (value === 'moto' && bool === false) {
-    const motoInfo = document.getElementById('motoInfo')
     motoInfo.style.display = 'none'
+    otherMoto.style.display = 'none'
+    otherBrandMoto.checked = false
   }
 }
 
+rateForm.addEventListener('click', renderScaleNumber)
 rateForm.addEventListener('mousemove', renderScaleNumber)
 
 haveCarYes.addEventListener('click', () => showAddInfo('car', true))

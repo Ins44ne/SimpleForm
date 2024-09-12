@@ -1,6 +1,6 @@
 * {
   border-radius: 15px;
-  font-family: 'Playwrite NZ', cursive;
+  font-family: "Playwrite NZ", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -11,12 +11,14 @@ p {
 }
 
 body {
-  background: -webkit-linear-gradient(90deg, #75a47f, #bacd92, #fcffe0);
-  background: linear-gradient(90deg, #75a47f, #bacd92, #fcffe0);
+  background: #78bbee83;
 }
 
 #header,
 #footer {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -26,13 +28,11 @@ body {
 
 #header {
   border-bottom: 5px groove #8996a0;
-  box-shadow: 0px 10px 13px -7px #000000, 0px 3px 15px 5px #8996a0;
 }
 
 #footer {
   margin-top: 3vh;
   border-top: 5px groove #8996a0;
-  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 5px #8996a0;
 }
 
 #titleFooter,
@@ -48,7 +48,6 @@ body {
   margin: 1vw auto;
   padding: 1vw 3vw;
   border: 5px groove #8996a0;
-  background-color: #bacd926c;
 }
 
 #submit,
@@ -60,9 +59,8 @@ body {
 #rateForm,
 #timeEnd {
   height: 30px;
-padding: 0;
+  padding: 0;
 }
-
 
 input,
 select {
@@ -72,8 +70,8 @@ select {
   margin-left: 15px;
 }
 
-input[type='radio'],
-input[type='checkbox'],
+input[type="radio"],
+input[type="checkbox"],
 #rateForm,
 #timeEnd {
   cursor: pointer;
@@ -143,22 +141,21 @@ optgroup {
   width: 9vw;
 }
 
-input[type='submit'],
-input[type='reset'] {
+input[type="submit"],
+input[type="reset"] {
   transition: 0.7s background-color ease;
 }
 
-input[type='submit']:hover,
-input[type='reset']:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #75a47f;
   transition: 0.7s background-color ease;
 }
 
-
-@media(max-width: 500px) {
-  body{
-  font-size: 10px;
-  padding: 0;
+@media (max-width: 500px) {
+  body {
+    font-size: 10px;
+    padding: 0;
   }
 
   input,
@@ -182,5 +179,5 @@ input[type='reset']:hover {
 
   telExample {
     font-size: 8px;
-}
+  }
 }
